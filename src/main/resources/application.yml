@@ -1,0 +1,21 @@
+server:
+  port: 9090
+#  context-path: /register
+spring:
+ # autoconfigure: #this config is to disable the MongoTemplate Config
+ #   exclude: org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration
+  application:
+    name: Registration Service
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+ #     uri: medmgmt://127.0.0.1:27017
+      database: medmgmt
+      repositories:
+ #       enabled: true
+        type: auto
+#       min-connections: 2
+#       max-connections: 5
+#       connect-timeout-ms: 5000
+#       socket-timeout-ms: 5000
